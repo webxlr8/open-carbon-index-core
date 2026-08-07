@@ -1,0 +1,55 @@
+{
+  "name": "@opencarbonindex/core",
+  "version": "0.1.0",
+  "description": "The measurement core of Open Carbon Index: SWDM v4 carbon computation, website scanning, grading and badge rendering.",
+  "license": "MIT",
+  "author": "WebXLR8 (https://webxlr8.com)",
+  "homepage": "https://github.com/webxlr8/open-carbon-index-core",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/webxlr8/open-carbon-index-core.git"
+  },
+  "keywords": [
+    "carbon",
+    "sustainability",
+    "swdm",
+    "website-carbon",
+    "co2",
+    "green-web"
+  ],
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "files": [
+    "src",
+    "data",
+    "assets",
+    "docs"
+  ],
+  "engines": {
+    "node": ">=22"
+  },
+  "packageManager": "pnpm@10.32.1",
+  "scripts": {
+    "lint": "biome check .",
+    "format": "biome format --write .",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "data:grid": "node scripts/fetch-grid-intensity.mjs",
+    "data:ip": "node scripts/fetch-ip-country.mjs"
+  },
+  "dependencies": {
+    "@resvg/resvg-js": "^2.6.2",
+    "puppeteer-core": "^25.3.0",
+    "satori": "^0.26.0",
+    "zod": "^4.4.3"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^2.5.3",
+    "@tgwf/co2": "^0.19.0",
+    "@types/node": "^26.1.1",
+    "typescript": "^5.9.3",
+    "vitest": "^4.1.10"
+  }
+}

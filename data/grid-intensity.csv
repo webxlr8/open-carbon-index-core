@@ -1,0 +1,214 @@
+iso2,country,g_per_kwh
+# source: Ember yearly electricity data via @tgwf/co2 v^0.19.0 (averageIntensity)
+# license: CC-BY-4.0 (Ember); regenerate with: node scripts/fetch-grid-intensity.mjs
+# generated: 2026-08-06
+GLOBAL,World,473
+AE,United Arab Emirates,468
+AF,Afghanistan,124
+AG,Antigua & Barbuda,611
+AL,Albania,24
+AM,Armenia,244
+AO,Angola,167
+AR,Argentina,345
+AS,American Samoa,647
+AT,Austria,103
+AU,Australia,554
+AW,Aruba,550
+AZ,Azerbaijan,633
+BA,Bosnia & Herzegovina,638
+BB,Barbados,600
+BD,Bangladesh,695
+BE,Belgium,118
+BF,Burkina Faso,555
+BG,Bulgaria,264
+BH,Bahrain,902
+BI,Burundi,231
+BJ,Benin,590
+BN,Brunei,893
+BO,Bolivia,468
+BR,Brazil,106
+BS,Bahamas,654
+BT,Bhutan,24
+BW,Botswana,849
+BY,Belarus,324
+BZ,Belize,156
+CA,Canada,185
+CD,Congo - Kinshasa,27
+CF,Central African Republic,0
+CG,Congo - Brazzaville,714
+CH,Switzerland,37
+CI,Côte d’Ivoire,394
+CK,Cook Islands,250
+CL,Chile,266
+CM,Cameroon,286
+CN,China,558
+CO,Colombia,286
+CR,Costa Rica,63
+CU,Cuba,639
+CV,Cape Verde,480
+CY,Cyprus,512
+CZ,Czechia,414
+DE,Germany,342
+DJ,Djibouti,450
+DK,Denmark,143
+DM,Dominica,600
+DO,Dominican Republic,566
+DZ,Algeria,634
+EC,Ecuador,210
+EE,Estonia,341
+EG,Egypt,575
+ER,Eritrea,591
+ES,Spain,146
+ET,Ethiopia,24
+FI,Finland,72
+FJ,Fiji,278
+FK,Falkland Islands,1000
+FO,Faroe Islands,354
+FR,France,44
+GA,Gabon,429
+GB,United Kingdom,216
+GD,Grenada,667
+GE,Georgia,143
+GF,French Guiana,204
+GH,Ghana,453
+GL,Greenland,111
+GM,Gambia,667
+GN,Guinea,183
+GP,Guadeloupe,494
+GQ,Equatorial Guinea,605
+GR,Greece,320
+GT,Guatemala,273
+GU,Guam,611
+GW,Guinea-Bissau,625
+GY,Guyana,634
+HK,Hong Kong SAR China,682
+HN,Honduras,290
+HR,Croatia,174
+HT,Haiti,535
+HU,Hungary,183
+ID,Indonesia,682
+IE,Ireland,280
+IL,Israel,567
+IN,India,709
+IQ,Iraq,689
+IR,Iran,649
+IS,Iceland,28
+IT,Italy,288
+JM,Jamaica,561
+JO,Jordan,539
+JP,Japan,484
+KE,Kenya,85
+KG,Kyrgyzstan,153
+KH,Cambodia,497
+KI,Kiribati,500
+KM,Comoros,643
+KN,St. Kitts & Nevis,636
+KP,North Korea,344
+KR,South Korea,416
+KW,Kuwait,637
+KY,Cayman Islands,643
+KZ,Kazakhstan,802
+LA,Laos,232
+LB,Lebanon,369
+LC,St. Lucia,650
+LK,Sri Lanka,510
+LR,Liberia,436
+LS,Lesotho,21
+LT,Lithuania,139
+LU,Luxembourg,135
+LV,Latvia,136
+LY,Libya,831
+MA,Morocco,578
+MD,Moldova,630
+ME,Montenegro,414
+MG,Madagascar,477
+MK,North Macedonia,569
+ML,Mali,395
+MM,Myanmar (Burma),570
+MN,Mongolia,784
+MO,Macao SAR China,449
+MQ,Martinique,517
+MR,Mauritania,482
+MS,Montserrat,1000
+MT,Malta,484
+MU,Mauritius,633
+MV,Maldives,612
+MW,Malawi,55
+MX,Mexico,483
+MY,Malaysia,604
+MZ,Mozambique,128
+NA,Namibia,48
+NC,New Caledonia,586
+NE,Niger,688
+NG,Nigeria,508
+NI,Nicaragua,288
+NL,Netherlands,253
+NO,Norway,31
+NP,Nepal,23
+NR,Nauru,750
+NZ,New Zealand,120
+OM,Oman,545
+PA,Panama,259
+PE,Peru,263
+PF,French Polynesia,437
+PG,Papua New Guinea,514
+PH,Philippines,613
+PK,Pakistan,399
+PL,Poland,615
+PM,St. Pierre & Miquelon,600
+PR,Puerto Rico,665
+PS,Palestinian Territories,461
+PT,Portugal,112
+PY,Paraguay,25
+QA,Qatar,603
+RE,Réunion,525
+RO,Romania,246
+RS,Serbia,671
+RU,Russia,446
+RW,Rwanda,302
+SA,Saudi Arabia,692
+SB,Solomon Islands,636
+SC,Seychelles,571
+SD,Sudan,214
+SE,Sweden,36
+SG,Singapore,499
+SI,Slovenia,227
+SK,Slovakia,96
+SL,Sierra Leone,48
+SN,Senegal,535
+SO,Somalia,524
+SR,Suriname,383
+SS,South Sudan,610
+ST,São Tomé & Príncipe,556
+SV,El Salvador,99
+SY,Syria,682
+SZ,Eswatini,143
+TC,Turks & Caicos Islands,654
+TD,Chad,615
+TG,Togo,478
+TH,Thailand,555
+TJ,Tajikistan,99
+TM,Turkmenistan,1306
+TN,Tunisia,560
+TO,Tonga,571
+TR,Türkiye,470
+TT,Trinidad & Tobago,682
+TW,Taiwan,635
+TZ,Tanzania,372
+UA,Ukraine,250
+UG,Uganda,57
+US,United States,384
+UY,Uruguay,97
+UZ,Uzbekistan,1121
+VC,St. Vincent & Grenadines,600
+VE,Venezuela,180
+VG,British Virgin Islands,647
+VI,U.S. Virgin Islands,642
+VN,Vietnam,486
+VU,Vanuatu,500
+WS,Samoa,400
+XK,Kosovo,959
+YE,Yemen,586
+ZA,South Africa,714
+ZM,Zambia,111
+ZW,Zimbabwe,298

@@ -1,0 +1,18 @@
+{
+  "source": "Sustainable Web Design digital carbon ratings (percentile-anchored grade thresholds derived from the HTTP Archive dataset). Anchors 95→50 are the published 5th–50th percentile boundaries; the >median tail is approximated from the HTTP Archive page-weight distribution converted via SWDM v4 at global grid intensity.",
+  "url": "https://sustainablewebdesign.org/digital-carbon-ratings/",
+  "generated": "2026-08-07",
+  "anchors": [
+    { "co2": 0.0, "cleanerThan": 100 },
+    { "co2": 0.04, "cleanerThan": 95 },
+    { "co2": 0.079, "cleanerThan": 90 },
+    { "co2": 0.145, "cleanerThan": 80 },
+    { "co2": 0.209, "cleanerThan": 70 },
+    { "co2": 0.278, "cleanerThan": 60 },
+    { "co2": 0.359, "cleanerThan": 50 },
+    { "co2": 0.55, "cleanerThan": 25 },
+    { "co2": 0.95, "cleanerThan": 10 },
+    { "co2": 2.0, "cleanerThan": 2 },
+    { "co2": 5.0, "cleanerThan": 0 }
+  ]
+}
