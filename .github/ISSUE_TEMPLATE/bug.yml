@@ -1,0 +1,22 @@
+name: Bug report
+description: Something in the code behaves incorrectly
+labels: ["bug"]
+body:
+  - type: textarea
+    id: what
+    attributes:
+      label: What did you do?
+      description: Ideally a snippet we can run.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: What did you expect, and what happened instead?
+    validations:
+      required: true
+  - type: input
+    id: env
+    attributes:
+      label: Node version and OS
+      placeholder: "Node 22.15 on Ubuntu 24.04"

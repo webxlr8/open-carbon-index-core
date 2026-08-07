@@ -1,0 +1,35 @@
+name: Dataset correction
+description: Wrong grid intensity, hosting country, or percentile anchor
+labels: ["dataset"]
+body:
+  - type: dropdown
+    id: which
+    attributes:
+      label: Which dataset?
+      options:
+        - Grid intensity (data/grid-intensity.csv)
+        - IP to country (data/ip-country-ipv4.bin)
+        - Percentile reference (data/reference-distribution.json)
+        - Curated hosting country (KNOWN_HOSTS)
+    validations:
+      required: true
+  - type: input
+    id: entry
+    attributes:
+      label: Which entry?
+      placeholder: "e.g. CH, or example.com"
+    validations:
+      required: true
+  - type: input
+    id: correct
+    attributes:
+      label: Correct value
+    validations:
+      required: true
+  - type: input
+    id: source
+    attributes:
+      label: Source
+      description: Ember, IEA, an official grid operator, or public hosting documentation.
+    validations:
+      required: true

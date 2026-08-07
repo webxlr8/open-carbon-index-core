@@ -37,7 +37,8 @@
     "typecheck": "tsc --noEmit",
     "test": "vitest run",
     "data:grid": "node scripts/fetch-grid-intensity.mjs",
-    "data:ip": "node scripts/fetch-ip-country.mjs"
+    "data:ip": "node scripts/fetch-ip-country.mjs",
+    "example": "tsx examples/grade-a-site.ts"
   },
   "dependencies": {
     "@resvg/resvg-js": "^2.6.2",
@@ -50,6 +51,7 @@
     "@tgwf/co2": "^0.19.0",
     "@types/node": "^26.1.1",
     "typescript": "^5.9.3",
-    "vitest": "^4.1.10"
+    "vitest": "^4.1.10",
+    "tsx": "^4.23.0"
   }
 }

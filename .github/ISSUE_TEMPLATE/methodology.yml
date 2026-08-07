@@ -1,0 +1,29 @@
+name: Methodology challenge
+description: You think a number, threshold or assumption is wrong
+labels: ["methodology"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        These are first-class issues here, not support noise. Publishing
+        grades about other people's websites only works if the method can
+        be argued with.
+  - type: textarea
+    id: claim
+    attributes:
+      label: Which number or claim?
+      description: Quote the figure, threshold or line from docs/METHODOLOGY.md.
+    validations:
+      required: true
+  - type: textarea
+    id: argument
+    attributes:
+      label: Why you think it's wrong
+      description: Your reasoning, and a source if you have one.
+    validations:
+      required: true
+  - type: textarea
+    id: suggested
+    attributes:
+      label: What it should be instead
+      description: Optional, but it makes the fix much faster.

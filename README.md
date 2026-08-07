@@ -1,5 +1,10 @@
 # Open Carbon Index — measurement core
 
+[![CI](https://github.com/webxlr8/open-carbon-index-core/actions/workflows/ci.yml/badge.svg)](https://github.com/webxlr8/open-carbon-index-core/actions/workflows/ci.yml)
+[![Licence: MIT](https://img.shields.io/badge/licence-MIT-3e44b1)](LICENSE)
+[![Node](https://img.shields.io/badge/node-%3E%3D22-3e44b1)](.nvmrc)
+[![Verified against co2.js](https://img.shields.io/badge/verified%20against-co2.js-0ae895)](tests/unit/co2js-parity.test.ts)
+
 The part of [Open Carbon Index](https://github.com/webxlr8/OpenCarbonIndex)
 that produces and justifies a grade: the website scanner, the Sustainable
 Web Design Model v4 implementation, the grade thresholds, the percentile
@@ -82,6 +87,29 @@ pnpm data:ip     # IPv4→country ranges, via ip-location-db
 
 Both write files with a provenance header. Never hand-edit them.
 
+## Try it on a real site
+
+```bash
+pnpm exec tsx examples/grade-a-site.ts https://example.com
+```
+
+Runs the full pipeline — measure, locate the host, price the grid, grade,
+percentile — and prints the result.
+
+## Repository layout
+
+```
+src/scan/    measurement, energy model, grading, percentiles, SSRF guard
+src/grid/    grid intensity, IP geolocation, hosting-country resolution
+src/badge/   badge rendering — card, compact, shield; SVG and PNG
+src/paths.ts package-relative data resolution
+data/        Ember grid intensity, IPv4->country ranges, percentile reference
+scripts/     dataset regeneration, with provenance headers
+docs/        METHODOLOGY.md — the full method and its known limitations
+examples/    runnable end-to-end example
+tests/unit/  including the co2.js parity test
+```
+
 ## Contributing
 
 Scepticism is the most useful contribution. If you think a number is wrong,
@@ -89,7 +117,10 @@ the method is in `docs/METHODOLOGY.md` and the code is here — a well-argued
 issue about our maths is worth more to us than a feature request.
 
 Corrections to the grid data, and hosting-country fixes for sites we get
-wrong, are especially welcome.
+wrong, are especially welcome. See [CONTRIBUTING.md](CONTRIBUTING.md) for
+setup and the rules that keep grades honest, and
+[SECURITY.md](SECURITY.md) for reporting vulnerabilities — the SSRF guard
+and badge sanitisation are the areas most worth your attention.
 
 ## Licence
 
