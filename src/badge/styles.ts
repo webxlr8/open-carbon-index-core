@@ -23,7 +23,7 @@ export const DEFAULT_STYLE: BadgeStyle = {
 };
 
 /** Attribution shown on the card and compact variants. */
-export const ATTRIBUTION = "opencarbonindex.org · by WebXLR8";
+export const ATTRIBUTION = "opencarbonindex.org";
 
 // The grade IS the color — deliberately not customizable. A badge whose
 // color could be overridden would let an F dress up as an A.
