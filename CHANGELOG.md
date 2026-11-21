@@ -9,6 +9,23 @@ and this project uses [semantic versioning](https://semver.org/).
 
 ## [Unreleased]
 
+No change to how any grade is calculated.
+
+### Fixed
+
+- Compact badge: the grade chip and CO₂ figure no longer overlap the
+  "opencarbonindex.org" line at the foot of the badge.
+- Card badge: a site without verified green hosting now reads "not green
+  hosted" instead of the meaningless "hosted", matching its accessible label.
+
+### Changed
+
+- Dependencies: zod 4.6.7, puppeteer-core 25.16.0; dev tooling (Biome 2.5,
+  @types/node, Vitest, tsx); CI actions checkout v7, setup-node v7,
+  pnpm/action-setup v6.
+- satori stays on 0.26: 0.63 drops the badge's border and rounded corners
+  and ignores its padding.
+
 ## [0.1.0] — 2026-08-07
 
 First extraction from the Open Carbon Index website into a standalone,
