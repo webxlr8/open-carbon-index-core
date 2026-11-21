@@ -67,7 +67,7 @@ function palette(theme: BadgeStyle["theme"]) {
   return theme === "dark" ? DARK : LIGHT;
 }
 
-function chip(grade: string | null): object {
+function chip(grade: string | null, compact = false): object {
   return {
     type: "div",
     props: {
@@ -75,12 +75,12 @@ function chip(grade: string | null): object {
         display: "flex",
         alignItems: "center",
         justifyContent: "center",
-        padding: "4px 10px",
+        padding: compact ? "2px 8px" : "4px 10px",
         background: gradeColor(grade),
         color: gradeTextColor(grade),
         borderRadius: 6,
         fontWeight: 700,
-        fontSize: 18,
+        fontSize: compact ? 16 : 18,
       },
       children: grade ?? "?",
     },
@@ -111,7 +111,7 @@ function badgeElement(data: BadgeData, style: BadgeStyle): object {
           ? "scan it at the link"
           : data.greenHosted
             ? "green hosted"
-            : "hosted",
+            : "not green hosted",
         p.sub,
         11,
       ),
@@ -135,7 +135,11 @@ function badgeElement(data: BadgeData, style: BadgeStyle): object {
         display: "flex",
         alignItems: "center",
         gap: compact ? 10 : 12,
-        padding: compact ? "6px 10px" : "10px 14px",
+        // The bottom padding keeps the chip and text clear of the
+        // attribution line drawn at the foot of the badge (see
+        // attributionText). Without it the centred content sat on top of
+        // the attribution in the 58px-tall compact variant.
+        padding: compact ? "2px 10px 16px" : "8px 14px 18px",
         width: "100%",
         height: "100%",
         background: style.background === "transparent" ? "transparent" : p.bg,
@@ -146,7 +150,7 @@ function badgeElement(data: BadgeData, style: BadgeStyle): object {
         lineHeight: 1.25,
       },
       children: [
-        chip(data.grade),
+        chip(data.grade, compact),
         {
           type: "div",
           props: {
